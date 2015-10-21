@@ -1,0 +1,22 @@
+<h1>Listing PO-Number</h1>
+ 
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Project</th>
+    <th>Amount</th>
+    <th>PO</th>
+    <th>Email</th>
+    
+  </tr>
+ 
+  <% @ponumbers.each do |ponumber| %>
+    <tr>
+      <td><%= ponumber.id %></td>
+      <td><%= ponumber.project %></td>
+      <td><%= ponumber.amount %></td>
+      <td><%= ponumber.po %></td>
+      <td><%= ponumber.email %></td>
+    </tr>
+  <% end %>
+</table>
