@@ -16,7 +16,7 @@ class PonumbersController < ApplicationController
   
     @ponumber.po = SecureRandom.hex(10)
  
-   
+ExampleMailer.sample_email(@ponumber).deliver_now
 
      @ponumber.save   
      redirect_to @ponumber 
